@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css" />
+    <title> table </title>
+</head>
+
+<body>
+    <table class="table">
+        <thead>
+            <th>Nom</th>
+            <th>Prenom</th>
+        </thead>
+       <tbody>
+        <tr>
+            <td>Trump</td>
+            <td>Donald</td>
+        </tr>
+        <tr>
+            <td>Obama</td>
+            <td>Barak</td>
+        </tr>
+        <tr>
+            <td>Bush</td>
+            <td>Georges Junior</td>
+        </tr>
+        <tr>
+            <td>Clinton</td>
+            <td>Bill</td>
+        </tr>
+        <tr>
+            <td>Bush</td>
+            <td>Georges </td>
+        </tr>
+      </tbody>
+    </table>
+
+
+</body>
+
+</html>
+
+
+
+
+
+.table {
+width:400px;
+background-color:#eee;
+border-collapse:collapse;
+text-align: center;
+margin: 0 auto;
+}
+.table th {
+  background-color:#000;color:white;width:50%;
+}
+.table td, .table th {
+  padding:5px;border:1px solid #000;
+}
