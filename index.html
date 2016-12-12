@@ -28,17 +28,22 @@
         <tbody>
         </tbody>
     </table>
-    <div class="form">
-        <form action="demo_form.asp">
-            <label for="male">Male</label>
-            <input type="radio" name="gender" id="male" value="male"><br>
-            <label for="female">Female</label>
-            <input type="radio" name="gender" id="female" value="female"><br>
-            <label for="other">Other</label>
-            <input type="radio" name="gender" id="other" value="other"><br><br>
+
+        <form action="demo_form.asp" id="form">
+            <label for="name">Nom</label>
+            <input type="text" name="name" id="name" value="name"><br>
+
+            <label for="surname">Prenom</label>
+            <input type="text" name="surname" id="surname" value="surname"><br>
+
+            <label for="age">Age</label>
+            <input type="number" name="age" id="age" value="age"><br>
+            
+            <label for="height">Taille</label>
+            <input type="number" name="height" id="height" value="height"><br>
             <input type="submit" value="Submit" id="sub">
         </form>
-    </div>
+
     <script type="text/javascript" src="app.js">
     </script>
 </body>
