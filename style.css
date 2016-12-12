@@ -11,3 +11,11 @@ margin: 0 auto;
 .table td, .table th {
   padding:5px;border:1px solid #000;
 }
+.form {
+  margin: 0 50%;
+  width: 50%;
+  align-self: center;
+}
+body {
+  background-color: grey;
+}

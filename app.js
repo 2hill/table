@@ -28,7 +28,13 @@ let trContainer = document.createDocumentFragment();
  }
  tbody.appendChild(trContainer);
 
+
+
   }
+
+  document.getElementById("sub").addEventListener("click", function(){
+      alert("Form submited");
+  });
 
 document.addEventListener("DOMContentLoaded", ready);
 
