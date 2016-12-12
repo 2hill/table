@@ -1,24 +1,35 @@
 
 const ready = function ()  {
+  // loading
 const people = [
-  { firstname: "Landry", surname : "bob" },
-  { firstname: "Sharon", surname : "boby" },
-  { firstname: "Emerson", surname : "baba" },
-  { firstname: "Roni", surname : "bubu" },
+  { firstname: "Landry", surname : "O'Connel", age: 22, height: 140 },
+  { firstname: "Sharon", surname : "O'Gara", age: 52, height: 190  },
+  { firstname: "Emerson", surname : "O'Driscol", age: 32, height: 190  },
+  { firstname: "Roni", surname : "O'Sam", age: 31, height: 170  },
 ];
 const tbody = document.querySelector("tbody");
 
-for (let i = 0; i < people.length; i++) {
+/*for (let i = 0; i < people.length; i++) {
   let tr = document.createElement("tr");
   tr.innerHTML =
-  <td>${people[i].firstname}</td><td>${people[i].firstname}</td>
+  `<td>${people[i].firstname}</td><td>${people[i].firstname}</td>`
   let td = document.createElement("td");
   let firstname = document.createTextNode(people[i].firstname);
   td.appendChild(firstname);
   tr.appendChild(td);
-  tbody.appendChild(tr);
+  tbody.appendChild(tr);*/
+
+let trContainer = document.createDocumentFragment();
+
+ for(let i = 0; i < people.length; i++) {
+   let tr = document.createElement("tr");
+   tr.innerHTML = `<td>${people[i].surname}</td><td>${people[i].firstname}</td><td>${people[i].age}</td><td>${people[i].height}</td>`;
+     trContainer.appendChild(tr);
+ }
+ tbody.appendChild(trContainer);
+
   }
-}
+
 document.addEventListener("DOMContentLoaded", ready);
 
 
